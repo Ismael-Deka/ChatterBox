@@ -1,0 +1,24 @@
+<!-- drawable/extended_.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="121dp"
+    android:height="48dp"
+    android:viewportWidth="121"
+    android:viewportHeight="48"
+    >
+
+  <group>
+
+    <clip-path
+        android:pathData="M24 0H97C110.255 0 121 10.7452 121 24C121 37.2548 110.255 48 97 48H24C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0Z"
+        />
+
+    <path
+        android:pathData="M0 0V48H121V0"
+        android:fillColor="@color/message_self_ocean_blue"
+        />
+
+  </group>
+
+</vector>

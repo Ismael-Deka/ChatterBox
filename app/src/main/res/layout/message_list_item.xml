@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <LinearLayout
+        android:id="@+id/message_from_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+    <RelativeLayout
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_message_bubble_from">
+
+        <TextView
+            android:id="@+id/message_received"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:text="Message received"
+            android:textSize="16dp" />
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/message_received_time"
+            android:text="Sent "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_gravity="left"/>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/message_sent_layout"
+    android:layout_width="match_parent"
+    android:layout_alignParentRight="true"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/ic_message_bubble_self"
+        >
+
+        <TextView
+            android:id="@+id/message_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:text="Message Sent"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/message_sent_time"
+        android:text="Sent "
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+</LinearLayout>
+</RelativeLayout>
